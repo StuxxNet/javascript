@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title>Curos de JavaScript - Desafio 02</title>
+	</head>
+	<body>
+
+		<div id="app">
+			<button id="btnSquares">Gerar Quadrado</button>
+		</div>
+
+		<div id="squares"></div>
+
+		<script>
+			var btnSquares = document.querySelector('button#btnSquares');
+			var containerApp = document.querySelector('div#squares');
+
+			function getRandomColor() {
+				var letters = "0123456789ABCDEF";
+				var color = "#";
+				for (var i = 0; i < 6; i++) {
+					color += letters[Math.floor(Math.random() * 16)];
+				}
+				return color;
+			}
+
+			btnSquares.onclick = function(){
+				var square = document.createElement('div');
+				square.style.width = 100;
+				square.style.height = 100;
+				square.style.backgroundColor = '#F00';
+
+				square.onmouseover = function(){
+        			square.style.backgroundColor = getRandomColor();
+			    }
+
+				containerApp.appendChild(square);
+			}
+		</script>
+	</body>
+</html>

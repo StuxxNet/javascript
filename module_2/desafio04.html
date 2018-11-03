@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>Curso de JavaScript - Desafio 04</title>
+	</head>
+	<body>
+		<div id="app">
+			<input type="text" name="nome">
+			<button onClick="adicionar()">Adicionar</button>	
+		</div>
+
+		<ul></ul>
+
+		<script>
+			var nomes = ["Diego", "Gabriel", "Lucas"];
+			var list = document.querySelector('ul');
+
+			for (var i = 0; i < 3; i++){
+				var element = document.createElement('li');
+				var text = document.createTextNode(nomes[i]);
+				
+				element.appendChild(text);
+				list.appendChild(element);
+			}
+
+			function adicionar() {
+				var list = document.querySelector('ul');
+				var input = document.querySelector('input');
+				var element = document.createElement('li');
+				var novoNome = document.createTextNode(input.value);
+
+				element.appendChild(novoNome);
+				list.appendChild(element);
+				input.value = '';
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>Curso de Java Script - Aula 02</title>
+	</head>
+	<body>
+		<div id="app">
+			<input type="text" name="nome" id="nome">
+			<button class="botao">Adicionar</button>
+		</div>
+
+		<script>
+			var input = document.querySelector('input#nome');        //# pega pelo id
+			var btnElement = document.querySelector('button.botao'); //. pega pela class
+
+			btnElement.onclick = function() {
+				var text = input.value;
+				alert(text);
+			}
+		</script>
+	</body>
+</html>

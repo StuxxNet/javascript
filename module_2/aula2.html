@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>Curso de Java Script - Aula 02</title>
+	</head>
+	<body>
+		<div id="app">
+			<input type="text" name="nome" id="nome">
+			<button class="botao">Adicionar</button>
+		</div>
+
+		<script>
+			var inputElement = document.getElementById('nome');
+			var inputElement2 = document.getElementsByTagName('input'); //sempre retorna um vetor, pois é pelo tipo da tag
+			var inputElement3 = document.getElementsByClassName('botao'); //sempre retorna um vetor, pois é pela class
+			var inputElement4 = document.querySelector('div#app input'); //percorre a DOM até achar o elemento
+			var inputElement5 = document.querySelector('input[name=nome]'); //percorre a DOM até achar o elemento
+			var inputElement6 = document.querySelectorAll('input'); //percorre a DOM até achar todos os elementos
+
+			console.log(inputElement);
+			console.log(inputElement2);
+			console.log(inputElement3);
+			console.log(inputElement4);
+			console.log(inputElement5);
+			console.log(inputElement6);
+		</script>
+	</body>
+</html>

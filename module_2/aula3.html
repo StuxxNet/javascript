@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>Curso de Java Script - Aula 03</title>
+	</head>
+	<body>
+		<div id="app">
+			<!-- Recebe os elementos do JavaScript -->
+		</div>
+
+		<script>
+			var linkElement = document.createElement('a');
+			var textElement = document.createTextNode('Acessar Facebook');
+			var inputElement = document.querySelector('input#nome');
+			var containerElement = document.getElementById('app');
+			
+			linkElement.setAttribute('href', 'http://www.facebook.com');
+			linkElement.setAttribute('title', 'Site do Facebook');
+			
+			linkElement.appendChild(textElement);
+			
+			containerElement.appendChild(linkElement);
+		</script>
+	</body>
+</html>

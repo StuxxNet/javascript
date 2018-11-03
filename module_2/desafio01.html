@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>Curso de JavaScript - Desafio 01</title>
+	</head>
+	<body>
+		<div id="app">
+			<button id="btnQuadrado">Gerar Quadrado</button>
+		</div>
+
+		<div id="squares"></div>
+
+		<script>
+			var containerApp = document.querySelector('div#squares');
+			var btnQuadrado = document.querySelector('button#btnQuadrado');
+
+			btnQuadrado.onclick = function(){
+				var square = document.createElement('div');
+				square.style.width = '100px';
+				square.style.height = '100px';
+				square.style.backgroundColor = '#F00';
+				
+				containerApp.appendChild(square);
+			}
+		</script>
+	</body>
+</html>

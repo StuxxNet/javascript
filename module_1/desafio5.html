@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>Curso Javascript - Desafio 5</title>
+	</head>
+	<body>
+		<script>
+			function imprimeFormatado(usuarios){
+				for(usuario of usuarios){
+					console.log('O(A) '+usuario.nome+' possui as habilidades: '+usuario.habilidades.join(', '));
+				}			
+			}
+			
+			var usuarios = [
+				{
+					nome: "Diego",
+					habilidades: ["Javascript", "ReactJS", "Redux"]
+				},
+				{
+					nome: "Gabriel",
+					habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+				}
+			];
+
+			imprimeFormatado(usuarios);
+		</script>
+	</body>
+</html>

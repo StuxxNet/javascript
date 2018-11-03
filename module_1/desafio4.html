@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title>Curso Javascript - Desafio 4</title>
+	</head>
+	<body>
+		<script>
+			function retornaExperiencia(tempo){
+				switch(true){
+					case (tempo <= 1):
+						console.log('Iniciante');
+						break;
+					case (tempo > 1 && tempo <= 3):
+						console.log('Intermediario');
+						break;
+					case (tempo > 3 && tempo <= 6):
+						console.log('Avançado');
+						break;
+					case (tempo > 6):
+						console.log('Jedi Master');
+						break;
+					default:
+						console.log(tempo);
+						break;
+				}
+			}
+			retornaExperiencia(7);
+		</script>
+	</body>
+</html>
